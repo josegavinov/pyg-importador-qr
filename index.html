@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Información del Importador | PYG Importaciones</title>
+  <meta name="description" content="Información del importador PYG Importaciones S.A.S" />
+  <style>
+    :root {
+      --bg: #f5f2ec;
+      --card: #ffffff;
+      --primary: #0b1628;
+      --muted: #5f6673;
+      --gold: #b4935a;
+      --line: #e7dfd2;
+      --radius: 24px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      font-family: Arial, Helvetica, sans-serif;
+      background: radial-gradient(circle at top, #fffaf0 0%, var(--bg) 45%, #eee7dc 100%);
+      color: var(--primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+
+    .page {
+      width: 100%;
+      max-width: 620px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: 0 24px 70px rgba(11, 22, 40, 0.12);
+      overflow: hidden;
+    }
+
+    .header {
+      background: linear-gradient(135deg, #0b1628, #142846);
+      color: white;
+      padding: 34px 28px;
+      text-align: center;
+      position: relative;
+    }
+
+    .header::after {
+      content: "";
+      width: 86px;
+      height: 4px;
+      border-radius: 999px;
+      background: var(--gold);
+      position: absolute;
+      left: 50%;
+      bottom: 18px;
+      transform: translateX(-50%);
+    }
+
+    .eyebrow {
+      font-size: 13px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #d8c295;
+      margin-bottom: 10px;
+      font-weight: 700;
+    }
+
+    h1 {
+      font-size: clamp(28px, 7vw, 46px);
+      line-height: 1;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+    }
+
+    .content {
+      padding: 32px 28px 28px;
+    }
+
+    .intro {
+      color: var(--muted);
+      font-size: 16px;
+      line-height: 1.6;
+      text-align: center;
+      margin-bottom: 28px;
+    }
+
+    .info-list {
+      display: grid;
+      gap: 14px;
+    }
+
+    .info-item {
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 18px;
+      background: #fffdf9;
+    }
+
+    .label {
+      display: block;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--gold);
+      font-weight: 800;
+      margin-bottom: 7px;
+    }
+
+    .value {
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 1.35;
+      word-break: break-word;
+    }
+
+    .email-link {
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    .email-link:hover {
+      text-decoration: underline;
+    }
+
+    .footer {
+      margin-top: 28px;
+      padding-top: 20px;
+      border-top: 1px solid var(--line);
+      text-align: center;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.5;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 9px 14px;
+      border-radius: 999px;
+      background: #f6efe2;
+      color: #765c2d;
+      font-weight: 700;
+      margin-bottom: 12px;
+      font-size: 13px;
+    }
+
+    @media print {
+      body {
+        background: white;
+        padding: 0;
+      }
+
+      .card {
+        box-shadow: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <section class="card" aria-label="Información del importador">
+      <header class="header">
+        <p class="eyebrow">Datos oficiales</p>
+        <h1>Información del Importador</h1>
+      </header>
+
+      <div class="content">
+        <p class="intro">
+          Esta página contiene la información del importador del producto.
+        </p>
+
+        <div class="info-list">
+          <div class="info-item">
+            <span class="label">Importado por</span>
+            <p class="value">PYG IMPORTACIONES S.A.S</p>
+          </div>
+
+          <div class="info-item">
+            <span class="label">RUC</span>
+            <p class="value">0993406220001</p>
+          </div>
+
+          <div class="info-item">
+            <span class="label">Dirección</span>
+            <p class="value">Camilo Destruje y Capitán Najera</p>
+          </div>
+
+          <div class="info-item">
+            <span class="label">Email</span>
+            <p class="value">
+              <a class="email-link" href="mailto:pygimportacionesgye@gmail.com">pygimportacionesgye@gmail.com</a>
+            </p>
+          </div>
+        </div>
+
+        <footer class="footer">
+          <div class="badge">PYG Importaciones</div>
+          <p>Información disponible mediante código QR en el empaque del producto.</p>
+        </footer>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
